@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lambo.az | Eksklüziv Avtomobillər</title>
+    <style>
+        /* CSS - Saytın Dizaynı */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: #0a0a0a;
+            color: #ffffff;
+        }
+
+        /* Naviqasiya */
+        header {
+            background-color: #000;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #c4a000;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            color: #c4a000;
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #c4a000;
+        }
+
+        /* Hero Bölməsi */
+        .hero {
+            height: 70vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1525609004556-c46c7d6cf048?q=80&w=1500&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #c4a000;
+            color: #000;
+            padding: 12px 35px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #fff;
+            transform: scale(1.05);
+        }
+
+        /* Avtomobillər Bölməsi */
+        .container {
+            padding: 60px 10%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 32px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #c4a000;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .cars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .car-card {
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: 0.4s;
+            border: 1px solid #333;
+        }
+
+        .car-card:hover {
+            border-color: #c4a000;
+            transform: translateY(-10px);
+        }
+
+        .car-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .car-info {
+            padding: 20px;
+        }
+
+        .car-info h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #c4a000;
+        }
+
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 15px;
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000;
+            text-align: center;
+            padding: 40px;
+            margin-top: 50px;
+            color: #777;
+            border-top: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Lambo.az</div>
+        <nav>
+            <ul>
+                <li><a href="#">Modellər</a></li>
+                <li><a href="#">Haqqımızda</a></li>
+                <li><a href="#">Əlaqə</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>ƏFSANƏNİ HİSS ET</h1>
+        <p style="font-size: 20px; margin-bottom: 30px;">Lamborghini: Sürət və Lüksün Vəhdəti</p>
+        <a href="#cars" class="btn">Modellərə Bax</a>
+    </section>
+
+    <div class="container" id="cars">
+        <center><h2 class="section-title">Yeni Modellər</h2></center>
+        
+        <div class="cars-grid">
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1621135802920-133df287f89c?q=80&w=600&auto=format&fit=crop" alt="Lamborghini Revuelto">
+                <div class="car-info">
+                    <h3>Revuelto</h3>
+                    <p>V12 Hibrid mühərrik, 1015 at gücü.</p>
+                    <span class="price">Qiymət: $600,000</span>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?q=80&w=600&auto=format&fit=crop" alt="Lamborghini Urus">
+                <div class="car-info">
+                    <h3>Urus S</h3>
+                    <p>Dünyanın ən sürətli SUV modellərindən biri.</p>
+                    <span class="price">Qiymət: $230,000</span>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?q=80&w=600&auto=format&fit=crop" alt="Lamborghini Huracan">
+                <div class="car-info">
+                    <h3>Huracán STO</h3>
+                    <p>Yarış treki üçün doğulmuş yol canavarı.</p>
+                    <span class="price">Qiymət: $330,000</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Lambo.az - Bütün hüquqlar qorunur.</p>
+        <p>Bakı, Azərbaycan</p>
+    </footer>
+
+</body>
+</html>
